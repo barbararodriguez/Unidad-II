@@ -1,0 +1,32 @@
+{%  extends 'base.html' %}
+{%  block body %}
+    <h2>{{the_title}}</h2>
+    <p>The values in the potential energy:</p>
+    <table>
+        <tr>
+            <td> G:</td>
+            <td>{{ the_G }}</td>
+        </tr>
+        <tr>
+            <td>M :</td>
+            <td>{{ the_M }}</td>
+        </tr>
+        <tr>
+            <td> m:</td>
+            <td>{{ the_m }}</td>
+        </tr>
+        <tr>
+            <td> r:</td>
+            <td>{{ the_r }}</td>
+        </tr>
+    <tr>
+        <td colspan="2">
+    E = -G*((M*m)/r)
+        </td>
+    </tr>
+    <tr>
+        <td>Result:</td>
+        <td>{{the_result}}</td>
+    </tr>
+    </table>
+{% endblock %}
